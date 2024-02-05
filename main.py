@@ -5,7 +5,7 @@ st.title("Rapper Name Generator")
 
 
 #rapper, name, food type, adjective, hobby
-name = st.sidebar.text_area(label="What is your first name", max_chars=20)
+name = st.sidebar.text_area(label="What is your first name?", max_chars=20)
 rapper = st.sidebar.text_area(label="Who is your favorite hip hop artist?", max_chars=20)
 adjective = st.sidebar.text_area(label='What is an adjective that describes you?', max_chars=20)
 hobby = st.sidebar.text_area(label='What do you do for fun?', max_chars=20)
