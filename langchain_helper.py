@@ -2,9 +2,10 @@ from langchain_openai import OpenAI
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 from dotenv import load_dotenv
+import streamlit as st
 
 load_dotenv()
-
+OPENAI_API_KEY = st.secrets['OPENAI_API_KEY']
 def generate_rapper_name(rapper, name, food_type, adjective, hobby):
     llm = OpenAI(temperature=0.7)
 
